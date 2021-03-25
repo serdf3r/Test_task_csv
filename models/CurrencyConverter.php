@@ -16,7 +16,6 @@ class CurrencyConverter {
     }
 
     public function convert() {
-//        print_r("fff".$this->valore);
         $this->valuta_recuperata = substr($this->getValueFromString($this->valore), 1, -1);
         $this->valore = substr($this->getValueFromString($this->valore), 0, 1);
         $ret = '';
@@ -48,11 +47,7 @@ class CurrencyConverter {
 
     function getChangeEuro($valore, $valuta) {
         $ret = '';
-//        print_r($valore . "------");
-//         print_r($valuta . "------");
-//        exit;
         if (is_numeric($valore)) {
-
             switch ($valuta) {
                 case 'S':
                     $ret = $valore / 1.38;
@@ -78,9 +73,6 @@ class CurrencyConverter {
 
     function getChangeDollar($valore, $valuta) {
         $ret = '';
-//        print_r($valore . "------");
-//         print_r($valuta . "------");
-//        exit;
         if (is_numeric($valore)) {
 
             switch ($valuta) {

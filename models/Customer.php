@@ -15,14 +15,6 @@ class Customer {
         $this->val_r = $params[2];
     }
 
-    public function getDate() {
-        echo "DATA TODO";
-    }
-
-    public function getTransaction() {
-        echo "Transazione TODO";
-    }
-
     public function getTransactions() {
         if (($handle = fopen("data.csv", "r")) !== FALSE) { // --- fopen apre un file, arg: url del file, r- sola lettura
             $e = 0;
