@@ -8,7 +8,8 @@ if (count($argv) != 3) {
 //print_r($argv);
 $customer = $argv[1];
 echo "Transazioni dell' utente " . $customer . "\n";
-$customer = new Customer(intval($argv[1]));
+$customer = new Customer($argv);
 foreach ($customer->getTransactions() as $transaction) {
-    echo "In data " . $transaction->getDate() . " l'utente " . $customer . " ha fatto la seguente transazione: " . $transaction->getTransaction() . " --> " . $transaction->getTransaction() . "\n";
+  
+    echo "In data " . $transaction[0] . " l'utente " . $transaction[1] . " ha fatto la seguente transazione: " . $transaction[2] . " --> " . $transaction[3] . "\n";
 }
