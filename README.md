@@ -1,3 +1,11 @@
+Per avviare il report si può lanciare all'interno della cartella del progetto il seguente comando:
+
+ php (path del file)/report.php (nome utente) (valuta di cambio)
+es: php ./scripts/report.php 2 E <-- per euro
+es: php ./scripts/report.php 1 S <-- per dollaro
+
+sommariamente sono gestiti errori di tipo valuta, valori, utente non validi.
+
 DEV CHALLENGE
 ===============================
 
